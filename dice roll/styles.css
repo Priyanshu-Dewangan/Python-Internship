@@ -1,0 +1,94 @@
+
+@keyframes rollAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    background-image: url('bg.png'); /* Replace 'background.jpg' with your image file's name */
+    background-size: cover; /* This property ensures that the image covers the entire background */
+    background-repeat: no-repeat;
+
+}
+.heading {
+    font-size: 1.5em; /* Set the font size for the heading */
+    color: black; /* Set the color of the heading text */
+    margin-bottom: 20px;}
+
+.head { font-size: 1em; /* Set the font size for the heading */
+    color: black; /* Set the color of the heading text */
+    margin-bottom: 20px;
+
+}
+.container {
+    
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color:white; /* White background for the container */
+        padding: 30px; /* Add some padding to the container */
+        border-radius: 50px; /* Optional: Rounded corners */
+        text-align: center;
+        width: 350px;
+       
+        border: 2px solid black; 
+    }
+    
+
+
+.button-container,
+.dice-container {
+    background-color: white; /* White background for the button and dice containers */
+    padding: 10px; /* Add some padding to the button and dice containers */
+    border-radius: 10px; /* Optional: Rounded corners */
+    margin-bottom: 80px;
+    text-align: center; 
+    
+}
+
+button {
+
+    font-size: 1em;
+    padding: 10px 20px;
+    position:relative;
+    cursor: pointer;
+    background-color: #e74c3c; /* Red background for the button */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.dice {
+    display: inline-block; /* Make the dice container inline-block */
+    vertical-align: middle;
+    margin-right: 30px; 
+    width: 100px; /* Set a fixed width for the container */
+    height: 100px;
+  
+ 
+}
+
+
+
+.result {
+    font-size: 1.2em;
+    font-weight: bold;
+    color:black;
+    padding: 30px;
+    height: 40px; /* Set a fixed height for the result container */
+    line-height: 40px;
+}
+

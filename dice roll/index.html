@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Rolling Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Dice Rolling Simulator</h1> 
+        <h2 class="head"> Roll a 6-sided dice with dice roller </h2>
+        <div class="dice-container">
+            <div class="dice">
+                <img src="dice-1.png" alt="Dice" id="diceImage">
+            </div>
+        </div>
+        <div class="result" id="result"></div>
+        <h2 class="head"> (Press button to roll the dice) </h2>
+        <div class="button-container">
+            <button onclick="rollDice()">ROLL IT</button>
+        </div>
+    </div>
+    
+    <audio id="rollSound" src="roll_sound.mp3"></audio> <!-- Add audio element -->
+    <script src="script.js"></script>
+</body>
+</html>
